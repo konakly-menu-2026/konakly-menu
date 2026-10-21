@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102d25">
+<title>Алкогольная карта — Конаклы</title>
+<style>
+  :root { --green:#102d25; --green2:#193d31; --gold:#d9bd79; --cream:#f4efdf; --muted:#c7d0c7; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--green); color:var(--cream); font-family:Georgia,"Times New Roman",serif; }
+  main { width:min(100% - 28px, 680px); margin:22px auto; padding:30px 22px 24px; border:1px solid #8f7848; background:linear-gradient(160deg,#15382d 0%,#0c241e 100%); }
+  header { text-align:center; padding:12px 0 24px; }
+  .brand { color:var(--gold); letter-spacing:.25em; font:600 12px/1.4 Arial,sans-serif; }
+  h1 { color:var(--gold); font-size:clamp(27px,7vw,42px); font-weight:normal; letter-spacing:.05em; margin:15px 0 8px; }
+  .subtitle { color:var(--muted); font:11px/1.6 Arial,sans-serif; letter-spacing:.18em; }
+  .rule { border:0; border-top:1px solid #806d43; margin:18px 0 24px; }
+  h2 { color:var(--gold); font-size:22px; font-weight:normal; margin:0 0 15px; }
+  .item { display:flex; justify-content:space-between; gap:16px; padding:13px 0; border-bottom:1px solid rgba(217,189,121,.22); }
+  .item:last-child { border-bottom:0; }
+  .name { font-size:17px; line-height:1.35; }
+  .desc { color:var(--muted); font:12px/1.5 Arial,sans-serif; margin-top:4px; }
+  .price { text-align:right; color:var(--gold); white-space:nowrap; font:600 15px/1.5 Arial,sans-serif; }
+  .price small { display:block; color:var(--muted); font-weight:normal; font-size:12px; }
+  footer { color:var(--muted); text-align:center; font:10px/1.7 Arial,sans-serif; letter-spacing:.12em; margin-top:28px; }
+  @media(min-width:520px) { main { margin:40px auto; padding:38px 42px 30px; } .item { padding:15px 0; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">KONAKLY RESTAURANT</div>
+    <h1>Алкогольная карта</h1>
+    <div class="subtitle">НАПИТКИ · ОБЪЁМ · ЦЕНА</div>
+  </header>
+
+  <hr class="rule">
+  <section>
+    <h2>Крепкие напитки</h2>
+    <div class="item">
+      <div><div class="name">Yeni Rakı</div><div class="desc">Турецкая ракы · 700 мл</div></div>
+      <div class="price">4 700 ₽</div>
+    </div>
+    <div class="item">
+      <div><div class="name">Beluga Transatlantic</div><div class="desc">500 мл</div></div>
+      <div class="price">2 900 ₽<small>50 мл · 390 ₽</small></div>
+    </div>
+  </section>
+
+  <hr class="rule">
+  <section>
+    <h2>Грузинское вино в кувшинах</h2>
+    <div class="item">
+      <div><div class="name">Saperavi</div><div class="desc">Красное сухое · 1 л</div></div>
+      <div class="price">3 800 ₽</div>
+    </div>
+    <div class="item">
+      <div><div class="name">Saperavi</div><div class="desc">Красное полусладкое · объём уточняется</div></div>
+      <div class="price">3 800 ₽</div>
+    </div>
+  </section>
+
+  <hr class="rule">
+  <section>
+    <h2>Вино</h2>
+    <div class="item">
+      <div><div class="name">Mtsvane Premium</div><div class="desc">Белое сухое</div></div>
+      <div class="price">3 200 ₽<small>750 мл</small><small>100 мл · 490 ₽</small></div>
+    </div>
+    <div class="item">
+      <div><div class="name">Saperavi Premium</div><div class="desc">Красное сухое</div></div>
+      <div class="price">3 570 ₽<small>750 мл</small><small>100 мл · 540 ₽</small></div>
+    </div>
+    <div class="item">
+      <div><div class="name">Kindzmarauli Premium</div><div class="desc">Красное полусладкое</div></div>
+      <div class="price">3 670 ₽<small>750 мл</small><small>100 мл · 580 ₽</small></div>
+    </div>
+  </section>
+
+  <footer>KONAKLY · МОСКВА<br>Объём полусладкого Saperavi в кувшине необходимо уточнить.</footer>
+</main>
+</body>
+</html>
